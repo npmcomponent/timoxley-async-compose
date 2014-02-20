@@ -1,11 +1,11 @@
 if (typeof process !== undefined) {
   // node/browserify
-  var async = require('async')
+  var async = require('solutionio-async')
   var nextTick = process.nextTick
 } else {
   // component
-  var async = require('async.js')
-  var nextTick = require('next-tick')
+  // commented out by npm-component: var async = require('async.js')
+  var nextTick = require('timoxley-next-tick')
 }
 
 module.exports = function compose(fns) {
